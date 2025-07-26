@@ -1,6 +1,6 @@
 {
   "name": "node-morgoth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "From the depths of the forge, utilities for your Node.js project(s).",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -38,7 +38,7 @@
     "type": "git",
     "url": "git+https://github.com/nazmul-nhb/node-morgoth.git"
   },
-  "homepage": "https://github.com/nazmul-nhb/node-morgoth",
+  "homepage": "https://github.com/nazmul-nhb/node-morgoth?tab=readme-ov-file#node-morgoth",
   "author": {
     "name": "Nazmul Hassan",
     "email": "nazmulnhb@gmail.com"
