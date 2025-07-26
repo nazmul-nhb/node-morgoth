@@ -25,7 +25,7 @@
 ### ✨ Why `node-morgoth`?
 
 In Tolkien’s lore, **Morgoth** was the first dark lord, a master forger who shaped the very fabric of the world (and many of its darkest tools).  
-`node-morgoth` brings that same spirit of creation and control to your Node.js project(s):
+`node-morgoth` brings that same spirit of creation and control to your `Node.js` project(s):
 
 <!-- ✅ **File & Folder Manipulation** – move, copy, delete, and forge structures.   -->
 ✅ **Security Utilities** – JWT signing/verification, bcrypt hashing.  
