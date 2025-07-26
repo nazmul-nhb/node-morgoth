@@ -1,5 +1,7 @@
 # NHB Toolbox
 
+> Still under development... Do not use it in production-grade project(s) until the version reaches 1.0.0
+
 <p>
   <a href="https://www.npmjs.com/package/node-morgoth" aria-label="Downloads">
     <img src="https://img.shields.io/npm/dm/node-morgoth.svg?label=DOWNLOADS&style=flat&color=red&logo=npm" alt="Downloads" />
@@ -7,7 +9,7 @@
   <a href="https://www.npmjs.com/package/node-morgoth" aria-label="Version">
     <img src="https://img.shields.io/npm/v/node-morgoth.svg?label=NPM&style=flat&color=teal&logo=npm" alt="Latest Version" />
   </a>
-  <a href="https://bundlephobia.com/result?p=node-morgoth" aria-label="Bundle size">
+  <a href="https://bundlephobia.com/result?p=node-morgothj" aria-label="Bundle size">
     <img src="https://img.shields.io/bundlephobia/minzip/node-morgoth?style=flat&color=purple&label=SIZE&logo=nodedotjs" alt="Bundle Size" />
   </a>
   <a href="https://www.npmjs.com/package/node-morgoth" aria-label="License">
@@ -25,7 +27,7 @@
 In Tolkien’s lore, **Morgoth** was the first dark lord, a master forger who shaped the very fabric of the world (and many of its darkest tools).  
 `node-morgoth` brings that same spirit of creation and control to your Node.js project(s):
 
-✅ **File & Folder Manipulation** – move, copy, delete, and forge structures.  
+<!-- ✅ **File & Folder Manipulation** – move, copy, delete, and forge structures.   -->
 ✅ **Security Utilities** – JWT signing/verification, bcrypt hashing.  
 ✅ **Pluggable & Extensible** – more utilities to come.
 

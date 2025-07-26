@@ -29,9 +29,6 @@ export default defineScriptConfig({
                 distPath: 'dist/dts',
                 packageJsonPath: 'package.json',
                 typeFileCandidates: ['types.d.ts', 'interfaces.d.ts'],
-                extraPatterns: [
-                    { pattern: 'plugins', folderName: 'plugins' },
-                ],
                 extraStatic: {
                     './types': {
                         types: './dist/dts/types/index.d.ts',

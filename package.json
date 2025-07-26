@@ -1,6 +1,6 @@
 {
   "name": "node-morgoth",
-  "version": "0.0.2-beta.1",
+  "version": "0.0.2-beta.2",
   "description": "From the depths of the forge, utilities for your Node.js project(s).",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
