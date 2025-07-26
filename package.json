@@ -1,0 +1,93 @@
+{
+  "name": "node-morgoth",
+  "version": "0.0.1",
+  "description": "From the depths of the forge, utilities for your Node.js project(s).",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/dts/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "nhb-build",
+    "format": "nhb-format",
+    "lint": "nhb-lint",
+    "fix": "nhb-fix",
+    "build": "nhb-build",
+    "commit": "nhb-commit",
+    "module": "nhb-module",
+    "count": "nhb-count",
+    "delete": "nhb-delete"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "morgoth",
+    "forge",
+    "utilities",
+    "helpers"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazmul-nhb/node-morgoth.git"
+  },
+  "homepage": "https://github.com/nazmul-nhb/node-morgoth",
+  "author": {
+    "name": "Nazmul Hassan",
+    "email": "nazmulnhb@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Nazmul Hassan",
+      "email": "nazmulnhb@gmail.com",
+      "url": "https://github.com/nazmul-nhb"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/nazmul-nhb/nhb-toolbox/issues",
+    "email": "nazmulnhb@gmail.com"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "globals": "^16.3.0",
+    "nhb-scripts": "^1.8.23",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./types": {
+      "types": "./dist/dts/types/index.d.ts",
+      "default": "./dist/dts/types/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "types": [
+        "dist/dts/types/index.d.ts"
+      ]
+    }
+  }
+}
