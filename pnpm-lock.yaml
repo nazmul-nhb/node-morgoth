@@ -38,9 +38,15 @@ importers:
       nhb-scripts:
         specifier: ^1.8.23
         version: 1.8.23
+      nhb-toolbox:
+        specifier: ^4.13.7
+        version: 4.13.7
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      type-fest:
+        specifier: ^4.41.0
+        version: 4.41.0
       typescript:
         specifier: ^5.8.3
         version: 5.8.3

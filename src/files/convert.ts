@@ -1,34 +1,31 @@
 import { readFileSync } from 'fs';
-
-// /**
-//  * Converts a File object to a Base64 encoded string.
-//  * @param file - The file to convert.
-//  * @returns A Promise that resolves to the Base64 string of the file.
-//  */
-// export function fileToBase64(file: File | Blob): Promise<string> {
-// 	return new Promise((resolve, reject) => {
-// 		const reader = new FileReader();
-// 		reader.readAsDataURL(file);
-
-// 		reader.onload = () => {
-// 			if (typeof reader.result === 'string') {
-// 				resolve(reader.result.split(',')[1]); // Extract only the Base64 part
-// 			} else {
-// 				reject(new Error('Failed to convert file to Base64!'));
-// 			}
-// 		};
-
-// 		reader.onerror = () => reject(new Error('Error reading the file!'));
-// 	});
-// }
+import { readFile } from 'fs/promises';
+import { resolve } from 'path';
 
 /**
- * Converts a file (from disk) to a Base64 encoded string in Node.js.
+ * Converts a file from disk to a `Base64` encoded string.
+ * Paths are resolved relative to the current working directory of the process.
+ * @param filePath - Absolute or relative path to the file on disk.
+ * @returns A Promise that resolves to the Base64 string of the file.
+ */
+export async function fileToBase64(filePath: string): Promise<string> {
+	const absolutePath = resolve(process.cwd(), filePath);
+
+	const buffer = await readFile(absolutePath);
+
+	return buffer.toString('base64');
+}
+
+/**
+ * Converts a file (from disk) to a `Base64` encoded string in Node.js.
  * @param filePath - The path of the file.
  * @returns The Base64 encoded string of the file.
  */
-export function fileToBase64Node(filePath: string): string {
-	const fileBuffer = readFileSync(filePath);
+export function fileToBase64Sync(filePath: string): string {
+	const absolutePath = resolve(process.cwd(), filePath);
+
+	const fileBuffer = readFileSync(absolutePath);
+
 	return fileBuffer.toString('base64');
 }
 
@@ -87,13 +84,3 @@ export function textToBase64(text: string): string {
 export function base64ToText(base64: string): string {
 	return decodeURIComponent(atob(base64));
 }
-
-// (async () => {
-// 	const text = 'Hello, World!';
-// 	const base64 = textToBase64(text);
-// 	const virtualFile = base64ToFile(base64, 'hello.txt', 'text/plain');
-
-// 	const base640 = await fileToBase64(virtualFile);
-
-// 	console.log(base640);
-// })();

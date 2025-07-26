@@ -11,7 +11,7 @@ export {
 	base64ToFile,
 	base64ToText,
 	createVirtualFileBase64,
-	// fileToBase64,
-	fileToBase64Node,
+	fileToBase64,
+	fileToBase64Sync,
 	textToBase64,
 } from './files/convert';

@@ -1,6 +1,6 @@
 {
   "name": "node-morgoth",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "From the depths of the forge, utilities for your Node.js project(s).",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -67,7 +67,9 @@
     "eslint-plugin-prettier": "^5.5.3",
     "globals": "^16.3.0",
     "nhb-scripts": "^1.8.23",
+    "nhb-toolbox": "^4.13.7",
     "prettier": "^3.6.2",
+    "type-fest": "^4.41.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0"
   },

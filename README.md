@@ -1,4 +1,4 @@
-# NHB Toolbox
+# Node Morgoth
 
 > Still under development... Do not use it in production-grade project(s) until the version reaches 1.0.0
 
@@ -20,7 +20,7 @@
 ## node-morgoth
 
 > **Forge dark and powerful utilities for Node.js.**  
-> A mythic toolkit for Node,js craftsmen: file & folder manipulation, security helpers (JWT, bcrypt), and more — all forged in the depths of Morgoth’s forge.
+> A mythic toolkit for Node.js craftsmen: file & folder manipulation, security helpers (JWT, bcrypt), and more — all forged in the depths of Morgoth’s forge.
 
 ### ✨ Why `node-morgoth`?
 
@@ -28,8 +28,8 @@ In Tolkien’s lore, **Morgoth** was the first dark lord, a master forger who sh
 `node-morgoth` brings that same spirit of creation and control to your `Node.js` project(s):
 
 <!-- ✅ **File & Folder Manipulation** – move, copy, delete, and forge structures.   -->
-✅ **Security Utilities** – JWT signing/verification, bcrypt hashing.  
-✅ **Pluggable & Extensible** – more utilities to come.
+<!-- ✅ **Security Utilities** – JWT signing/verification, bcrypt hashing.   -->
+<!-- ✅ **Pluggable & Extensible** – more utilities to come. -->
 
 ---
 
@@ -51,26 +51,84 @@ yarn add node-morgoth
 
 ---
 
-## 🛠️ Usage
+## ⚡ Features
 <!-- 
-```ts
-import { forgeFile, verifyToken } from 'node-morgoth';
-
-/** Forge a new file */
-await forgeFile('src/data/example.txt', 'Forged by Morgoth');
-
-/** Verify a JWT token */
-const payload = verifyToken(token, secret);
-``` -->
+* 🔥 **File & Folder Utilities:** Copy, move, delete, read/write.
+* 🛡️ **Security Helpers:** JWT and bcrypt-like utilities. -->
+* ⚙️ **Crafted for Node.js:** Built with modern ESM and TypeScript.
+* 🌑 **More Coming Soon:** Like Morgoth’s endless forges.
 
 ---
 
-## ⚡ Features
+## 🛠️ Usage Guides
 
-* 🔥 **File & Folder Utilities:** Copy, move, delete, read/write.
-* 🛡️ **Security Helpers:** JWT and bcrypt-like utilities.
-* ⚙️ **Crafted for Node.js:** Built with modern ESM and TypeScript.
-* 🌑 **More Coming Soon:** Like Morgoth’s endless forges.
+### File Conversion Utilities
+
+#### `fileToBase64`
+
+Convert a file on disk to a Base64 string (async):
+
+```ts
+import { fileToBase64 } from 'node-morgoth';
+
+const base64 = await fileToBase64('path/to/file.png');
+console.log(base64); // → Base64 string
+```
+
+#### `fileToBase64Sync`
+
+Convert a file on disk to a Base64 string (sync):
+
+```ts
+import { fileToBase64Sync } from 'node-morgoth';
+
+const base64 = fileToBase64Sync('path/to/file.png');
+console.log(base64); // → Base64 string
+```
+
+#### `createVirtualFileBase64`
+
+Create a Base64 string from given text content:
+
+```ts
+import { createVirtualFileBase64 } from 'node-morgoth';
+
+const base64 = createVirtualFileBase64('Hello Morgoth!');
+console.log(base64); // → Base64 string
+```
+
+#### `base64ToFile`
+
+Recreate a browser `File` object from a Base64 string:
+
+```ts
+import { base64ToFile } from 'node-morgoth';
+
+const file = base64ToFile(base64String, 'example.txt', 'text/plain');
+console.log(file); // → File object (browser)
+```
+
+#### `textToBase64`
+
+Convert plain text to Base64:
+
+```ts
+import { textToBase64 } from 'node-morgoth';
+
+const base64 = textToBase64('Forge the dark tools');
+console.log(base64); // → Base64 string
+```
+
+#### `base64ToText`
+
+Decode Base64 back to plain text:
+
+```ts
+import { base64ToText } from 'node-morgoth';
+
+const text = base64ToText(base64String);
+console.log(text); // → original text
+```
 
 ---
 
