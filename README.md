@@ -9,7 +9,7 @@
   <a href="https://www.npmjs.com/package/node-morgoth" aria-label="Version">
     <img src="https://img.shields.io/npm/v/node-morgoth.svg?label=NPM&style=flat&color=teal&logo=npm" alt="Latest Version" />
   </a>
-  <a href="https://bundlephobia.com/result?p=node-morgothj" aria-label="Bundle size">
+  <a href="https://bundlephobia.com/result?p=node-morgoth" aria-label="Bundle size">
     <img src="https://img.shields.io/bundlephobia/minzip/node-morgoth?style=flat&color=purple&label=SIZE&logo=nodedotjs" alt="Bundle Size" />
   </a>
   <a href="https://www.npmjs.com/package/node-morgoth" aria-label="License">
